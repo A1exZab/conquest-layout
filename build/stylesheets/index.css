@@ -1,0 +1,544 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&family=Prata&family=Roboto:wght@400;500;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-style: inherit;
+  font-weight: 400;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 400;
+}
+
+.content {
+  flex: 1 1 auto;
+}
+
+.wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.container {
+  margin: 0px auto;
+  max-width: 1170px;
+  height: 100%;
+}
+
+.header {
+  height: 85px;
+  width: 100%;
+}
+
+.header__row {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.header__row .header__logo {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.header__row .header__logo span {
+  font-family: "Playfair Display", serif;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.14em;
+  color: #555248;
+}
+.header__row .header__menu ul {
+  display: flex;
+  align-items: center;
+  gap: 65px;
+  color: #555248;
+}
+.header__row .header__personal {
+  display: flex;
+  align-items: center;
+  gap: 23px;
+}
+
+.season-collection .container {
+  height: 768px;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.season-collection .container .season-collection__content {
+  position: absolute;
+  left: 65px;
+  top: 200px;
+}
+.season-collection .container .season-collection__content .season-collection__description {
+  display: flex;
+  flex-direction: column;
+}
+.season-collection .container .season-collection__content .season-collection__description .season-collection__name {
+  font-family: "Playfair Display", serif;
+  font-size: 45px;
+  line-height: 60px;
+  color: #1b1a17;
+  padding-bottom: 16px;
+}
+.season-collection .container .season-collection__content .season-collection__description .season-collection__title {
+  font-family: "Playfair Display", serif;
+  font-size: 30px;
+  line-height: 40px;
+  color: #1b1a17;
+  padding-bottom: 40px;
+}
+.season-collection .container .season-collection__content .season-collection__description .season-collection__text {
+  width: 258px;
+  line-height: 21px;
+  color: rgba(27, 26, 23, 0.82);
+  padding-bottom: 64px;
+}
+.season-collection .container .season-collection__content .season-collection__description button {
+  width: 205px;
+  height: 64px;
+  background-color: #444240;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: white;
+}
+.season-collection .season-collection__background {
+  height: 100%;
+  position: relative;
+}
+.season-collection .season-collection__background .season-collection__background_ellipse {
+  position: absolute;
+  top: 0;
+  left: 377px;
+}
+.season-collection .season-collection__background .season-collection__background_watch {
+  height: 768px;
+  position: absolute;
+  top: -9px;
+  left: 567px;
+}
+.season-collection .season-collection__background .season-collection__background_price-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  top: 132px;
+  left: 500px;
+}
+.season-collection .season-collection__background .season-collection__background_price-container .season-collection__background_price {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+}
+.season-collection .season-collection__background .season-collection__background_price-container .season-collection__background_price span {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+.season-collection .season-collection__background .season-collection__background_price-container .season-collection__background_price img {
+  height: 100%;
+}
+.season-collection .season-collection__background .season-collection__background_size {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  position: absolute;
+  left: 985px;
+  top: 635px;
+}
+.season-collection .season-collection__background .season-collection__background_size span {
+  font-family: "Prata";
+  font-size: 16px;
+  line-height: 22px;
+  color: #1b1a17;
+}
+
+.popular-models .container {
+  height: 720px;
+  padding: 85px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.popular-models .container .popular-models__title {
+  font-family: "Playfair Display", serif;
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+}
+.popular-models .container .popular-models__all {
+  align-self: end;
+  border-bottom: 1px solid #c4c0b6;
+  padding-bottom: 5px;
+}
+.popular-models .container .popular-models__all button {
+  background-color: white;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #444240;
+}
+.popular-models .container .popular-models__items {
+  width: 100%;
+  display: flex;
+  padding-top: 25px;
+  justify-content: space-between;
+}
+
+.banner {
+  height: 520px;
+  background: rgb(234, 227, 212);
+  background: linear-gradient(90deg, rgb(234, 227, 212) 0%, rgb(255, 255, 255) 80%);
+}
+.banner .container {
+  display: flex;
+  justify-content: center;
+  gap: 70px;
+}
+.banner .container .banner__pagination {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  gap: 20px;
+  z-index: 10;
+}
+.banner .container .banner__pagination .banner__arrows {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  padding-right: 75px;
+}
+.banner .container .banner__pagination .banner__arrows button {
+  background: transparent;
+  color: #1b1a17;
+}
+.banner .container .banner__pagination .banner__arrows span {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+.banner .banner__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.banner .banner__content .banner__title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+  padding-bottom: 38px;
+}
+.banner .banner__content .banner__text {
+  width: 376px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #444240;
+  padding-bottom: 45px;
+}
+.banner .banner__content button {
+  width: 205px;
+  height: 64px;
+  background-color: #d4b098;
+  font-family: "Roboto";
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  letter-spacing: 0.05em;
+  color: #ffffff;
+}
+
+.info-news {
+  height: 630px;
+  padding-top: 80px;
+  padding-bottom: 90px;
+}
+.info-news .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 70px;
+}
+.info-news .container .info-news__description {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.info-news .container .info-news__description .info-news__title {
+  font-family: "Playfair Display";
+  font-size: 32px;
+  line-height: 43px;
+  color: #1b1a17;
+  padding-bottom: 40px;
+}
+.info-news .container .info-news__description .info-news__text {
+  width: 376px;
+  font-size: 16px;
+  line-height: 27px;
+  color: #444240;
+  padding-bottom: 118px;
+}
+.info-news .container .info-news__description .info-news__text span {
+  font-weight: 700;
+}
+.info-news .container .info-news__description .info-news__links {
+  display: flex;
+  gap: 18px;
+}
+.info-news .container .info-news__photos {
+  display: flex;
+  gap: 10px;
+}
+.info-news .container .info-news__photos .info-news__photos-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-block {
+  width: 370px;
+  height: 467px;
+  display: flex;
+  flex-direction: column;
+  padding: 40px 29px 40px 28px;
+}
+.item-block .item__info {
+  padding-left: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.item-block .item__info .item__name {
+  font-family: "Playfair Display";
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(27, 26, 23, 0.82);
+}
+.item-block .item__info .item__price {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+.item-block .item__info .item__price span {
+  font-family: "Prata";
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(27, 26, 23, 0.82);
+}
+.item-block .item__image {
+  flex: 1 1 auto;
+  background: url("../../src/assets/watch-background.svg");
+  background-repeat: no-repeat;
+}
+.item-block .item__image img {
+  width: 313px;
+  height: 313px;
+}
+.item-block .item__details {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+.item-block .item__details button {
+  background-color: white;
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1b1a17;
+}
+
+.line {
+  background-color: #8b8371;
+  width: 50px;
+  height: 1px;
+}
+.line.left {
+  position: absolute;
+  left: 0;
+  top: 232px;
+}
+
+.footer {
+  height: 275px;
+  background-color: #444240;
+  width: 100%;
+}
+
+.footer-container {
+  height: 100%;
+  margin: 0px auto;
+  max-width: 1000px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-container .footer__contacts {
+  align-self: start;
+  padding-top: 57px;
+  display: flex;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.footer-container .footer__contacts .footer__logo {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+}
+.footer-container .footer__contacts .footer__logo span {
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  letter-spacing: 0.14em;
+  color: white;
+}
+.footer-container .footer__phone {
+  padding-bottom: 15px;
+}
+
+.info-block {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;
+}
+.info-block .info-block__title {
+  color: #fff;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.07em;
+}
+.info-block .info-block__articles {
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+.info-block .info-block__articles ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.icon__likes {
+  position: relative;
+}
+.icon__likes span {
+  position: absolute;
+  left: 13px;
+  top: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 50%;
+  background-color: #e6c8b4;
+  color: #1b1a17;
+  font-size: 8px;
+  line-height: 9px;
+}
+
+/*# sourceMappingURL=index.css.map */
