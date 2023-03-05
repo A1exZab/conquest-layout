@@ -438,6 +438,7 @@ body {
   display: flex;
   align-items: center;
   gap: 18px;
+  padding-top: 20px;
 }
 .item-block .item__details button {
   background-color: white;
